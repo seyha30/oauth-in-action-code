@@ -12,7 +12,7 @@ var app = express();
 
 app.engine('html', cons.underscore);
 app.set('view engine', 'html');
-app.set('views', 'files/client');
+app.set('views', 'files/client/index');
 
 // authorization server information
 var authServer = {

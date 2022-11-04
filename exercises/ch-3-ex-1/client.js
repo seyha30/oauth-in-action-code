@@ -7,13 +7,10 @@ var cons = require('consolidate');
 var randomstring = require("randomstring");
 var __ = require('underscore');
 __.string = require('underscore.string');
-
 var app = express();
-
 app.engine('html', cons.underscore);
 app.set('view engine', 'html');
 app.set('views', 'files/client');
-
 // authorization server information
 var authServer = {
 	authorizationEndpoint: 'http://localhost:9001/authorize',
